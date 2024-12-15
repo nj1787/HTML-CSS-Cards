@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/wp6179220.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#main-navigation-bar {
+  border: 2px solid black;
+  height: 80px;
+  min-width: 50vw;
+}
+
+#navigation-items {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  height: max-content;
+  width: 85%;
+  padding: 6px;
+  margin-top: 12px;
+  margin-left: 120px;
+  background-color: rgba(8, 6, 6, 0.751);
+}
+
+.nav-item {
+  padding: 6px;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+#navigation-items a {
+  text-decoration: none;
+  color: #ffff;
+  padding: 5px 15px;
+  position: relative;
+}
+
+#navigation-items a::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#navigation-items a:hover::after {
+  width: 100%;
+  left: 0;
+}
